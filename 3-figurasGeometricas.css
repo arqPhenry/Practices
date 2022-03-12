@@ -1,0 +1,285 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.cardsContainers{
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    grid-gap: 40px;
+}
+.card{
+    display: grid;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 7px 7px 8px -4px rgba(160, 160, 160, 0.59);
+
+}
+.card .titulo{
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: center;
+}
+.card .titulo img{
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .titulo h2{
+    margin: 0px;
+    font-weight: bolder;
+}
+.card .icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .icono img{
+    width: 150px;
+}
+.card .camposInput{
+    padding: 12px 20px 0 16px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px 16px;
+}
+.card .camposInput div{
+    display: flex;
+    flex-direction: column;
+}
+.card .camposInput input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+}
+.card .camposInput div label{
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+.card .camposInput .alturaesc{
+    height: 42px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.card .camposInput .alturaesc span{
+    font-weight: 700;
+    padding: 0px 12px;
+}
+
+.card .camposInput1{
+    padding: 12px 20px 0 16px;
+    margin-bottom: 24px;
+    display: grid;
+}
+.card .camposInput1 div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.card .camposInput div,
+.card .camposInput1 div,
+.card .camposInput2 div,
+.card .camposInput4 div,
+.card .camposInput5 div{
+    width: 100%;
+}
+.card .camposInput5 div input,
+.card .camposInput1 div input,
+.card .camposInput2 div input,
+.card .camposInput4 div input{
+    width: 95%;
+}
+.card .camposInput div input{
+    width: 90%;
+}
+.card .camposInput1 input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+}
+.card .camposInput1 div label{
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+.card .camposInput2{
+    padding: 12px 20px 0 16px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px 16px;
+}
+.card .camposInput2 div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.card .camposInput2 input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+}
+.card .camposInput2 div label{
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+.card .camposInput2 .alturaiso{
+    height: 42px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.card .camposInput2 .alturaiso span{
+    font-weight: 700;
+    padding: 0px 12px;
+}
+
+.card .camposInput4{
+    padding: 12px 20px 0 16px;
+    margin-bottom: 24px;
+    display: grid;
+}
+.card .camposInput4 div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.card .camposInput4 input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+}
+.card .camposInput4 div label{
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+.card .resultArea{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 16px 0px 16px;
+    margin-bottom: 12px;
+    justify-content: space-around;
+    grid-gap: 16px;
+}
+.card .camposInput5{
+    padding: 12px 20px 0 16px;
+    margin-bottom: 24px;
+    display: grid;
+}
+.card .camposInput5 div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.card .camposInput5 input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--text-input-field);
+}
+.card .camposInput5 div label{
+    font-size: var(--md);
+    color: var(--very-light-pink);
+}
+.card .resultArea{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 16px 0px 16px;
+    margin-bottom: 12px;
+    justify-content: space-around;
+    grid-gap: 16px;
+}
+.card .resultArea .area,
+.card .resultArea .perimetro{
+    height: 78px;
+    width: 98px;
+    background-color: var(--text-input-field);
+    border-radius: 20px;
+    padding: 12px;
+}
+.area, .perimetro{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.t span{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.resultado span{
+    font-size: var(--lg);
+    font-weight: 700;
+}
+.boton{
+    margin-top: 0px;
+    margin-bottom: 24px;
+    padding: 0 12px;
+    }
+.boton button{
+        background-color: var(--hospital-green);
+        border: none;
+        border-radius: 14px;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: 700;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.card input{
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--md);
+    display: flex;
+    padding: 0 0 0 12px;
+}
+
+@media (max-width: 640px){
+    .cardsContainers{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto;
+    }
+}
