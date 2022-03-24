@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4649/4649107.png">
+    <link href="./4-descuentos.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="principalContainer">
+        
+        <div class="landing">
+            <div class="inicio">
+                <h1>Tus cupones, <br>
+                    Tus descuentos.
+                </h1>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="coupon-info">
+                <div class="title">
+                    <span>Cupón de descuento</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/4649/4649107.png" alt="icono">
+                </div>
+                <div class="codebutton">
+                    <div class="code">
+                        <input type="text" id="codCupon" placeholder="XXAWSXXX">
+                    </div>
+                    <div class="button">
+                        <button type="button" onclick="calculosCupon()">Reclamar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="coupon-calculos">
+                <div class="monto">
+                    <label for="monto">Ingrese su monto base:</label>
+                    <input type="number" id="monto" placeholder="0 $">
+                </div>
+                <div class="descuento">
+                    <span>Descuento:</span>
+                    <span class="dmonto" id="descuento">0 %</span>
+                </div>
+            </div>
+            <div class="coupon-finish">
+                <div class="total">
+                    <span>Total a pagar:</span>
+                    <span class="ftotal" id="totalis">0 $</span>
+                </div>
+                <div class="button2">
+                    <button type="button" onclick="calcularTotal()">Ver pago</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./4-descuentos.js"></script>
+</body>
+</html>

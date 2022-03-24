@@ -1,0 +1,183 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --amarillin: #ffe54a;
+    --amarillinFuerte: #f4cc03;
+    --rojoclaro: #f1475d;
+    --rojofuerte: #de1f55;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --imagenFondo: https://cdn-icons-png.flaticon.com/512/1043/1043436.png;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(110deg, #ffb629 0, #ffa537 10%, #ff9243 20%, #ff7e4b 30%, #ff6951 40%, #f25353 50%, #d93f53 60%, #c22f54 70%, #ad2355 80%, #9b1b56 90%, #8c1859 100%);
+    
+}
+.principalContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1043/1043436.png);
+    background-repeat: repeat-x;
+    background-position-x: 49%;
+    background-position-y: 80%;
+    background-size: 20rem;
+}
+.principalContainer .landing{
+    position: relative;
+    top: -190px;
+}
+.landing .inicio h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-input-field);
+    font-weight: 500;
+    font-size: 64px;
+    margin: 0px;
+}
+.coupon{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 12px;
+    height: auto;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #ffe54a;
+    box-shadow: 15px 9px 35px 1px rgba(0,0,0,0.25);
+    position: relative;
+    top: -3px;
+}
+input{
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--md);
+}
+.coupon-info{
+    display: grid;
+    grid-template-rows: auto auto;
+    border-bottom: 3px dotted var(--rojofuerte);
+    padding-bottom: 10px;
+}
+.coupon-info input{
+    width: 176px;
+    height: 42px;
+    padding: 0 12px 0 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--text-input-field);
+}
+.coupon-info .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.coupon-info .title span{
+    font-size: var(--lg);
+    font-weight: 700;
+    padding: 0 12px 0 12px;
+}
+.coupon-info .codebutton{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.coupon-info img{
+    height: 42px;
+    padding: 0 12px 0 12px;
+}
+
+.coupon-calculos{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px dotted var(--rojofuerte);
+    padding-bottom: 10px;
+    padding-top: 4px;
+}
+.coupon-calculos .descuento,
+.coupon-calculos .monto{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.coupon-calculos .descuento .dmonto{
+    height: 42px;
+    padding: 0 12px 0 12px;
+    border-radius: 12px;
+    background-color: var(--text-input-field);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--md);
+    width: 100px;
+}
+.coupon-calculos input{
+    width: 176px;
+    height: 42px;
+    padding: 0 12px 0 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--text-input-field);
+}
+.coupon-finish{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 4px;
+}
+.coupon-finish .total{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.coupon-finish .total .ftotal{
+    width: 176px;
+    height: 42px;
+    padding: 0 12px 0 12px;
+    border-radius: 12px;
+    background-color: var(--text-input-field);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: var(--md);
+    margin-top: 4px;
+}
+.coupon-finish button{
+    background-color: var(--rojoclaro);
+    color: white;
+    font-size: var(--md);
+    font-weight: 500;
+    height: 42px;
+    width: 124px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+.coupon-finish button:hover,
+.coupon-info button:hover{
+    background-color: var(--rojofuerte);
+}
+.coupon-info button{
+    background-color: var(--rojoclaro);
+    color: white;
+    font-size: var(--md);
+    font-weight: 500;
+    height: 42px;
+    width: 124px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+.coupon label{
+    margin-bottom: 4px;
+}
