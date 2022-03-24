@@ -1,1 +1,1 @@
-# javascriptPracticas
+# Practicas
